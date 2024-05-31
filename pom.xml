@@ -6,7 +6,7 @@
 
     <groupId>ch.malbun</groupId>
     <artifactId>Kalender</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>Kalender</name>
 
     <properties>

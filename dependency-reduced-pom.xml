@@ -4,7 +4,7 @@
   <groupId>ch.malbun</groupId>
   <artifactId>Kalender</artifactId>
   <name>Kalender</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <build>
     <plugins>
       <plugin>
