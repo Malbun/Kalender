@@ -73,16 +73,16 @@ public class CalenderView extends VBox {
       if (currentLevel == Levels.DAY) {
         if (current.getMonthValue() == 1) {
           if (current.getYear() != 2024) {
-            current = LocalDate.of(current.getYear() - 1, 12, current.getDayOfMonth());
+            current = LocalDate.of(current.getYear() - 1, 12, 1);
             reload();
           }
         } else {
-          current = LocalDate.of(current.getYear(), current.getMonthValue() - 1, current.getDayOfMonth());
+          current = LocalDate.of(current.getYear(), current.getMonthValue() - 1, 1);
           reload();
         }
       } else {
         if (current.getYear() != 2024) {
-          current = LocalDate.of(current.getYear() - 1, current.getMonthValue(), current.getDayOfMonth());
+          current = LocalDate.of(current.getYear() - 1, current.getMonthValue(), 1);
           reload();
         }
       }
@@ -95,16 +95,16 @@ public class CalenderView extends VBox {
       if (currentLevel == Levels.DAY) {
         if (current.getMonthValue() == 12) {
           if (current.getYear() != 2034) {
-            current = LocalDate.of(current.getYear() + 1, 1, current.getDayOfMonth());
+            current = LocalDate.of(current.getYear() + 1, 1, 1);
             reload();
           }
         } else {
-          current = LocalDate.of(current.getYear(), current.getMonthValue() + 1, current.getDayOfMonth());
+          current = LocalDate.of(current.getYear(), current.getMonthValue() + 1, 1);
           reload();
         }
       } else {
         if (current.getYear() != 2034) {
-          current = LocalDate.of(current.getYear() + 1, current.getMonthValue(), current.getDayOfMonth());
+          current = LocalDate.of(current.getYear() + 1, current.getMonthValue(), 1);
           reload();
         }
       }
